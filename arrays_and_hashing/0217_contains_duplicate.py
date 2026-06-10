@@ -1,0 +1,14 @@
+class Solution:
+    def containsDuplicate(self, nums: List[int]) -> bool:
+
+        seen=set()
+
+        for char in nums:
+            if char in seen:
+                return True
+            else:
+                seen.add(char)
+        
+        return False
+
+        
